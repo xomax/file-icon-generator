@@ -4,7 +4,9 @@
  *
  * Give the proper directory as first argument
  */
-require 'FileIconBuilder.php';
+
+// Composer autoload
+require '../vendor/autoload.php';
 
 $dw = '';
 if(isset($argv[1])) $dw = $argv[1];
@@ -34,12 +36,9 @@ $extensions = array(
 // generate all the icons
 @mkdir('32x32');
 
-$DFIB = new FileIconBuilder();
-foreach($extensions as $ext) {
-    echo "$ext\n";
-    $DFIB->create16x16($ext,"$ext.png");
-    $DFIB->create32x32($ext,"32x32/$ext.png");
-}
+$DFIB = new \FileIconGenerator\Helper();
+$DFIB->create16x16($extensions, '');
+$DFIB->create32x32($extensions, '32x32');
 
 copy("jpg.png", "jpeg.png");
 copy("32x32/jpg.png", "32x32/jpeg.png");
