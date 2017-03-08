@@ -6,7 +6,7 @@
 	 * mime types
 	 */
 
-	namespace FileIconGenerator;
+	namespace xomax\FileIconGenerator;
 
 	class Builder {
 

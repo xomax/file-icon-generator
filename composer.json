@@ -2,5 +2,10 @@
     "name": "xomax/file-icon-generator",
     "description": "Generates incons for mime types",
     "type": "library",
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "xomax\\FileIconGenerator\\": "src/FileIconGenerator/"
+        }
+    }
 }

@@ -36,7 +36,7 @@ $extensions = array(
 // generate all the icons
 @mkdir('32x32');
 
-$DFIB = new \FileIconGenerator\Helper();
+$DFIB = new \xomax\FileIconGenerator\Helper();
 $DFIB->create16x16($extensions, '');
 $DFIB->create32x32($extensions, '32x32');
 

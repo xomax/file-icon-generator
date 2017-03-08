@@ -1,5 +1,5 @@
 <?php
-	namespace FileIconGenerator;
+	namespace xomax\FileIconGenerator;
 
 	class Color
 	{

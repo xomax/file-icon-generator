@@ -2,5 +2,5 @@
 // Composer autoload
 require '../vendor/autoload.php';
 
-$FIB = new \FileIconGenerator\Helper();
+$FIB = new \xomax\FileIconGenerator\Helper();
 $FIB->createAll('out');
